@@ -4,7 +4,7 @@ A Physics-Informed Neural Network (PINN) for modeling glucose-insulin dynamics i
 
 ## What this is
 
-Standard neural networks trained on glucose-insulin data tend to learn spurious correlations and fail outside their training distribution. PINNs fix this by encoding the known ODEs governing glucose-insulin physiology directly into the loss function — so the model can't just memorize trajectories, it has to respect the underlying dynamics.
+Standard neural networks trained on glucose-insulin data tend to learn spurious correlations and fail outside their training distribution. PINNs fix this by encoding the known ODEs governing glucose-insulin physiology directly into the loss function, so the model can't just memorize trajectories, it has to respect the underlying dynamics.
 
 This project trains a PINN on simulated patient data from the UVA/Padova T1D Simulator and compares it against a Neural ODE baseline. The goal is to get accurate, physically consistent predictions of glucose response to insulin inputs, which matters a lot for closed-loop insulin delivery systems.
 
