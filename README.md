@@ -10,7 +10,7 @@ This project trains a PINN on simulated patient data from the UVA/Padova T1D Sim
 
 ## Background
 
-The glucose-insulin system is well-described by a set of coupled ODEs (the Hovorka model / Bergman minimal model family). The UVA/Padova simulator is the FDA-accepted gold standard for in silico T1D trials — it generates realistic virtual patient data across meal scenarios and insulin regimens.
+The glucose-insulin system is well-described by a set of coupled ODEs (the Hovorka model / Bergman minimal model family). The UVA/Padova simulator is the FDA-accepted gold standard for in silico T1D trials. It generates realistic virtual patient data across meal scenarios and insulin regimens.
 
 PINNs embed these dynamics as soft constraints via a physics residual loss term, penalizing predictions that violate the ODEs. This makes them particularly useful when measured data is sparse or noisy, which is exactly the clinical reality.
 
